@@ -3,3 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin-top: 40vh;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+div {
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+
+button {
+  padding: .6rem .8rem;
+  font-weight: 600;
+  font-size: 18px;
+  background: #7a78db8f;
+  color: rgb(24, 19, 100);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
