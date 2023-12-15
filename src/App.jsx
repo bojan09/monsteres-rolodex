@@ -3,20 +3,30 @@ import "./App.css";
 import React, { useState } from "react";
 
 const App = () => {
-  const [user, setUser] = useState({ name: "John", company: "Google" });
-
-  const changeuser = () => {
-    setUser({ name: "Bravo", company: "Apple" });
-  };
+  const [monsters, setMonsters] = useState([
+    {
+      name: "Linda",
+      id: 1,
+    },
+    {
+      name: "Frank",
+      id: 2,
+    },
+    {
+      name: "Jackie",
+      id: 3,
+    },
+    {
+      name: "James",
+      id: 4,
+    },
+  ]);
 
   return (
     <div>
-      <p>
-        Hi, I'm {user.name} and I work for {user.company}
-      </p>
-      <button onClick={changeuser} type="submit">
-        Change user
-      </button>
+      {monsters.map((monster) => (
+        <p key={monster.id}>{monster.name}</p>
+      ))}
     </div>
   );
 };
