@@ -2,6 +2,9 @@ import "./App.css";
 
 import React, { Component } from "react";
 
+// components
+import { CardList, SearchBar } from "./components";
+
 class App extends Component {
   constructor() {
     super();
@@ -53,6 +56,8 @@ class App extends Component {
         {filteredMonsters.map((monster) => (
           <p key={monster.id}>{monster.name}</p>
         ))}
+
+        <CardList />
       </div>
     );
   }
