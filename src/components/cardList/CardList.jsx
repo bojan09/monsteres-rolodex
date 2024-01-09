@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // styling
 import "./CardList.css";
 
-import Card from "../card/Card";
+import { Card } from "../";
 
 class CardList extends Component {
   render() {
@@ -12,7 +12,7 @@ class CardList extends Component {
     return (
       <div className="card-list">
         {monsters.map((monster) => (
-          <Card monster={monster} />
+          <Card monster={monster} key={monster.id} />
         ))}
       </div>
     );
